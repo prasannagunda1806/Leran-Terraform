@@ -6,5 +6,7 @@ data "aws_ami" "ami" {
 } 
 
 output "print_data_ami_id" {
-    value = data.aws_ami.ami.creation_date.architecture
+    value = {
+       a1 = data.aws_ami.ami.creation_date
+       a2 = data.aws_ami.ami.architecture
 }
