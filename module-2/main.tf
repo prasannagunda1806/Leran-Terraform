@@ -1,5 +1,6 @@
 module "my_instance" {
-    source = ""./module-1"
+
+    source = "./module-1"
     
     ami_details = "ami-0b5a2b5b8f2be4ec2"
     
